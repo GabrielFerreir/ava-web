@@ -1,4 +1,5 @@
 @import "./core/scss/break-points";
+@import "./core/scss/shadows";
 
 @include mobile {
   ui-card { background-color: #F00; }
