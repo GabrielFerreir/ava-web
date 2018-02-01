@@ -1,0 +1,9 @@
+@import "./core/scss/break-points";
+
+@include mobile {
+  ui-card { background-color: #F00; }
+}
+
+@include desktop {
+  ui-card { background-color: #FF0; }
+}
