@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Santos FC';
+
+  mudaTitle() {
+    this.title = 'Titulo';
+  }
 }
+
+

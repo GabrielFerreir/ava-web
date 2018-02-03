@@ -1,10 +1,19 @@
 @import "./core/scss/break-points";
 @import "./core/scss/shadows";
 
+@import "./core/uiTooltip/ui-tooltip.directive";
+
 @include mobile {
   ui-card { background-color: #F00; }
 }
 
 @include desktop {
   ui-card { background-color: #FF0; }
+}
+
+.container {
+  padding: 32px;
+  display: flex;
+ justify-content: center;
+
 }

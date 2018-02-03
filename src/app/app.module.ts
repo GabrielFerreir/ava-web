@@ -4,10 +4,12 @@ import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { SMNUIModule } from 'ng-smn-ui';
 
 import { AppComponent } from './app.component';
+import { UiTooltipDirective } from './core/uiTooltip/ui-tooltip.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UiTooltipDirective
   ],
   imports: [
     BrowserModule,
