@@ -5,6 +5,11 @@ import { SMNUIModule } from 'ng-smn-ui';
 
 import { AppComponent } from './app.component';
 import { UiTooltipDirective } from './core/uiTooltip/ui-tooltip.directive';
+import {MainModule} from './views/main/main.module';
+import {NotFoundModule} from './views/not-found/not-found.module';
+import {AppRoutingModule} from './app-routing.module';
+import {AuthModule} from './views/auth/auth.module';
+import {SharedModule} from './shared.module';
 
 @NgModule({
   declarations: [
@@ -12,8 +17,12 @@ import { UiTooltipDirective } from './core/uiTooltip/ui-tooltip.directive';
     UiTooltipDirective
   ],
   imports: [
-    BrowserModule,
-    SMNUIModule
+    SMNUIModule,
+    SharedModule,
+    MainModule,
+    AuthModule,
+    NotFoundModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],

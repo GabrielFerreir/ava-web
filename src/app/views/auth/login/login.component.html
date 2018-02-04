@@ -1,0 +1,31 @@
+<div class="container">
+  <section class="content">
+    <header class="header">
+      Ambiente virtual de aprendizagem
+    </header>
+    <fieldset>
+      <form>
+        <ui-input-container>
+          <input name="user" type="text" uiInput [(ngModel)]="info.user"/>
+          <label>Usuario</label>
+        </ui-input-container>
+        <ui-input-container>
+          <input name="pass" [type]="type ? 'text' : 'password'" uiInput [(ngModel)]="info.pass">
+          <label>Password</label>
+          <div class="suffix ui-button flat icon" (click)="type = !type" uiRipple>
+            <i class="material-icons light">{{type ? 'visibility_off' : 'visibility'}}</i>
+          </div>
+        </ui-input-container>
+        <section class="options">
+          <span class="esqueci">Esqueci minha senha</span>
+        </section>
+        <section class="buttons">
+          <button class="ui-button primary" uiRipple>Entrar</button>
+        </section>
+      </form>
+    </fieldset>
+
+    {{ info | json }}
+
+  </section>
+</div>
